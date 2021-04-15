@@ -1,0 +1,35 @@
+.hero {
+  color: #fff;
+  margin-top: 180px;
+  margin-left: 30px;
+
+  &__heading {
+    font-size: 40px;
+  }
+
+  &__mainWord {
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #54c3dc;
+    border-radius: 2px;
+
+  }
+
+  &__text {
+    padding-top: 30px;
+    max-width: 460px;
+  }
+
+  &__button {
+    margin-top: 45px;
+    width: 290px;
+    border-bottom: 10px solid #bb8e5b;
+
+    background: #e1aa6e;
+
+    &:hover {
+      color: black;
+      background-color: #bb8e5b;
+    }
+  }
+}

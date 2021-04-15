@@ -1,0 +1,16 @@
+.partners {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+
+  &__picture {
+    // margin: 30px;
+    // object-fit: contain;
+    width: 10vw;
+    max-width: 150px;
+    padding: 0 20px;
+    margin: 30px auto;
+    // max-width: 50%;
+    // width: calc((100% - 150px) / 6);
+  }
+}

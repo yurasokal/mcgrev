@@ -1,0 +1,59 @@
+@import "./vars";
+@import "./mixins";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 405px;
+  margin-top: 60px;
+  font-size: 16px;
+  text-align: center;
+  border-top: 2px solid #9d9e9e;
+  background-color: #f1ecec;
+  color: #454646;
+
+  &__nav {
+    margin: 50px 0;
+  }
+
+  &__links {
+    justify-content: center;
+  }
+
+  &__img {
+    margin: 0 30px 50px;
+    @include hover(transform, scale(1.25));
+  }
+
+  &__contacts {
+    margin-bottom: 50px;
+  }
+
+  &__address,
+  &__phone {
+    color: #454646;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #9d9e9e;
+    }
+  }
+
+  &__email {
+    font-size: 18px;
+    color: #f3a95b;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #daa468;
+    }
+  }
+
+  &__copyright {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid #9d9e9e;
+  }
+}

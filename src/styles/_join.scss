@@ -1,0 +1,55 @@
+.join {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 440px;
+  // flex-grow: 1;
+
+  &__picture {
+    flex-basis: 50%;
+    max-width: 50%;
+    object-fit: cover;
+  }
+
+  &__information {
+    background-image: url("../images/joinOurTeamBackground.png");
+    background-size: cover;
+    // height: 500px;
+    flex-basis: 50%;
+    max-width: 50%;
+    // max-height: 440px;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: #fff;
+  }
+
+  &__quote {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  &__heading {
+    // font-weight: bold;
+    font-size: 40px;
+  }
+
+  &__text {
+    width: 460px;
+    text-align: justify;
+  }
+
+  &__button {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    width: 290px;
+
+    border-bottom: 10px solid #048da4;
+
+    background: #00b5d2;
+
+    &:hover {
+      color: black;
+      background-color: #048da4;
+    }
+  }
+}

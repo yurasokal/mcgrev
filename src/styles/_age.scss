@@ -1,0 +1,24 @@
+.age {
+  display: block;
+  background-image: url("../images/age-background.png");
+  // background-image: url("../images/VectorSmartObject.svg");
+  background-size: cover;
+  height: 500px;
+  color: white;
+  text-align: center;
+  // position: relative;
+
+  &__heading {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+
+  &__text {
+    padding-top: 50px;
+  }
+
+  &__photo {
+    height: auto;
+    width: 100%;
+  }
+}
