@@ -57,3 +57,11 @@
     border-top: 1px solid #9d9e9e;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .footer {
+    &__copyright {
+      max-width: 320px;
+    }
+  }
+}

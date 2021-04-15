@@ -3,7 +3,7 @@
 }
 
 .contactUs {
-  position: column;
+  // flex-direction: column;
   // max-width: 730px;
   color: #454646;
   text-align: center;
@@ -25,6 +25,33 @@
     &:hover {
       color: black;
       background-color: #bb8e5b;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactUs {
+    max-width: 300px;
+    // padding: 0 10px;
+    &__heading {
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contactUs {
+
+    &__heading {
+
+    }
+
+    &__text {
+
     }
   }
 }

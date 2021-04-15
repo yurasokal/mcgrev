@@ -71,3 +71,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    &__linkFooter {
+      margin: 10px;
+    }
+  }
+}

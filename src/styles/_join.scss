@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: 440px;
+  // max-height: 440px;
   // flex-grow: 1;
 
   &__picture {
@@ -12,7 +12,7 @@
   }
 
   &__information {
-    background-image: url("../images/joinOurTeamBackground.png");
+    background: #367ab7;
     background-size: cover;
     // height: 500px;
     flex-basis: 50%;
@@ -50,6 +50,87 @@
     &:hover {
       color: black;
       background-color: #048da4;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join {
+    display: flex;
+    flex-direction: column;
+
+    &__picture {
+      flex-basis: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    &__information {
+      display: flex;
+      flex-direction: column;
+      background: #367ab7;
+      background-size: cover;
+      flex-basis: 100%;
+      max-width: 100%;
+      padding-top: 20px;
+      padding-left: 30px;
+      color: #fff;
+
+    }
+
+    &__heading,
+    &__quote,
+    &__text {
+      margin: 0 auto;
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+
+    &__button {
+      margin: 0 auto 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+
+    &__information {
+      // max-width: 320px;
+      padding: 0;
+    }
+
+    &__quote {
+      padding: 10px 30px;
+      text-align: center;
+      max-width: 300px;
+    }
+
+    &__text {
+      max-width: 300px;
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .join {
+
+    &__information {
+      max-width: 320px;
+      padding: 0;
+    }
+
+    &__quote {
+      padding: 10px 30px;
+      text-align: center;
+    }
+
+    &__text {
+      display: none;
+      max-width: 300px;
+      padding: 10px;
     }
   }
 }

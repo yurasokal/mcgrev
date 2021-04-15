@@ -22,3 +22,20 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .age {
+    // padding: 10px 200px;
+
+    &__heading {
+      padding: 100px 20px;
+      font-size: 32px;
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      padding: 20px 20px;
+      text-align: justify;
+    }
+  }
+}
