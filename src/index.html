@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <header class="header">
       <div class="header__top">
 
@@ -23,9 +24,21 @@
           <div class="logo__text"></div>
         </div>
 
-        <!-- <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button> -->
-        <nav class="nav header__nav">
+        <div class="menu">
+          <div class="menu__icon toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="links">
+            <a href="#home" class="menu__item toggle">Home</a>
+            <a href="#about" class="menu__item toggle">About us</a>
+            <a href="#contact" class="menu__item toggle">Contact</a>
+          </div>
+        </div>
+
+        <!-- <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link">
@@ -43,31 +56,33 @@
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
-
-      <div class="hero header__hero" id="home">
-        <h2 class="hero__heading">
-          We can <span class="hero__mainWord">help.</span>
-        </h2>
-        <p class="hero__text">
-          Teaching incependence to the lives of the people you love with reliable, individualized emotional and behavioral therapy.
-        </p>
-        <a
-          class="hero__button button"
-          href="https://www.ebay.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Find help here
-        </a>
+        </nav> -->
       </div>
 
     </header>
 
     <main class="main">
 
-      <section class="partners">
+      <section class="section">
+        <div class="hero" id="home">
+          <h2 class="hero__heading">
+            We can <span class="hero__mainWord">help.</span>
+          </h2>
+          <p class="hero__text">
+            Teaching incependence to the lives of the people you love with reliable, individualized emotional and behavioral therapy.
+          </p>
+          <a
+            class="hero__button button"
+            href="https://www.ebay.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find help here
+          </a>
+        </div>
+      </section>
+
+      <div class="partners">
         <div class="partners__pictures">
           <img
             class="partners__picture"
@@ -100,7 +115,7 @@
             alt="aetna"
           >
         </div>
-      </section>
+      </div>
 
       <section class="section">
         <div class="age" id="about">
@@ -135,15 +150,20 @@
         </a>
       </section>
 
-      <section class="support">
+      <div class="support">
         <div class="support__container">
+          <img
+            class="support__photo"
+            src="./images/background/Layer1.png"
+            alt="people walks"
+          >
           <div class="support__slider-outer">
             <img
               src="./images/slider/back.png"
               class="support__prev"
               alt="prev"
-              height="50px"
-              weight="50px"
+              height="50"
+              width="50"
             >
             <div class="support__slider-inner">
               <img
@@ -163,21 +183,31 @@
                 alt="nature"
               >
               <img
-                src="./images/slider/Slider4.png"
+                src="./images/slider/Slider5.jpeg"
+                class="support__nature"
+                alt="nature"
+              >
+              <img
+                src="./images/slider/Slider6.jpeg"
+                class="support__nature"
+                alt="nature"
+              >
+              <img
+                src="./images/slider/Slider8.jpeg"
                 class="support__nature"
                 alt="nature"
               >
             </div>
             <img
-                src="./images/slider/next.png"
-                class="support__next "
-                alt="next"
-                height="50px"
-                weight="50px"
-              >
+              src="./images/slider/next.png"
+              class="support__next "
+              alt="next"
+              height="50"
+              width="50"
+            >
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="section">
         <div class="join" id="career">
@@ -205,7 +235,6 @@
               Find what's available
             </a>
           </div>
-
         </div>
       </section>
 
@@ -298,8 +327,6 @@
       </div>
     </footer>
 
-    <h1 id="top-teader">jQuery - проба</h1>
-    <button id="button">Button</button>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

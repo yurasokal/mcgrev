@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // max-height: 440px;
-  // flex-grow: 1;
 
   &__picture {
     flex-basis: 50%;
@@ -12,15 +10,13 @@
   }
 
   &__information {
-    background: #367ab7;
+    background: $info-text-color;
     background-size: cover;
-    // height: 500px;
     flex-basis: 50%;
     max-width: 50%;
-    // max-height: 440px;
     padding-top: 40px;
     padding-left: 30px;
-    color: #fff;
+    color: $white-color;
   }
 
   &__quote {
@@ -29,7 +25,6 @@
   }
 
   &__heading {
-    // font-weight: bold;
     font-size: 40px;
   }
 
@@ -43,18 +38,18 @@
     margin-bottom: 40px;
     width: 290px;
 
-    border-bottom: 10px solid #048da4;
+    border-bottom: 10px solid $button-blue;
 
-    background: #00b5d2;
+    background: $main-background-color;
 
     &:hover {
       color: black;
-      background-color: #048da4;
+      background-color: $button-blue;
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $analog-screen-breakpoint) {
   .join {
     display: flex;
     flex-direction: column;
@@ -68,13 +63,13 @@
     &__information {
       display: flex;
       flex-direction: column;
-      background: #367ab7;
+      background: $analog-background-color;
       background-size: cover;
       flex-basis: 100%;
       max-width: 100%;
       padding-top: 20px;
       padding-left: 30px;
-      color: #fff;
+      color: $white-color;
 
     }
 
@@ -93,11 +88,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .join {
 
     &__information {
-      // max-width: 320px;
       padding: 0;
     }
 
@@ -114,7 +108,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone-screen-breakpoint) {
   .join {
 
     &__information {

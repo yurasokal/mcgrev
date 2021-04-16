@@ -1,7 +1,11 @@
 .hero {
-  color: #fff;
-  padding-top: 380px;
-  margin-left: 30px;
+  background: url("../images/heroPhoto.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: $white-color;
+  height: 100vh;
+  padding: 520px 20px 20px;
 
   &__heading {
     font-size: 40px;
@@ -10,9 +14,8 @@
   &__mainWord {
     font-size: 40px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #54c3dc;
+    border-bottom: 3px solid $main-background-color;
     border-radius: 2px;
-
   }
 
   &__text {
@@ -22,14 +25,26 @@
 
   &__button {
     margin-top: 45px;
-    width: 290px;
-    border-bottom: 10px solid #bb8e5b;
+    max-width: 290px;
+    border-bottom: 10px solid $button-darker;
 
-    background: #e1aa6e;
+    background: $button-light;
 
     &:hover {
       color: black;
-      background-color: #bb8e5b;
+      background-color: $button-darker;
     }
   }
 }
+
+@media screen and (max-width: $ipad-screen-breakpoint) {
+  .hero {
+    padding-top: 520px;
+  }
+}
+
+// @media screen and (max-width: 320px) {
+//   .hero {
+//     padding-top: 250px;
+//   }
+// }

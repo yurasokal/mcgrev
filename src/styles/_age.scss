@@ -1,12 +1,10 @@
 .age {
   display: block;
   background-image: url("../images/age-background.png");
-  // background-image: url("../images/VectorSmartObject.svg");
   background-size: cover;
   height: 500px;
   color: white;
   text-align: center;
-  // position: relative;
 
   &__heading {
     font-size: 40px;
@@ -23,10 +21,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .age {
-    // padding: 10px 200px;
-
     &__heading {
       padding: 100px 20px;
       font-size: 32px;

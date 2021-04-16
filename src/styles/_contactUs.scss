@@ -1,9 +1,7 @@
 .contactUs {
-  // flex-direction: column;
   max-width: 730px;
-  color: #454646;
+  color: $text-color;
   text-align: center;
-  // margin: 80px 0 70px;
   margin: 50px auto;
 
   &__text {
@@ -18,21 +16,20 @@
     margin: 45px auto 25px;
     width: 290px;
 
-    border-bottom: 10px solid #bb8e5b;
+    border-bottom: 10px solid $button-darker;
 
-    background: #e1aa6e;
+    background: $button-light;
 
     &:hover {
-      color: black;
-      background-color: #bb8e5b;
+      color: $black-color;
+      background-color: $button-darker;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .contactUs {
     max-width: 300px;
-    // padding: 0 10px;
     &__heading {
       padding-bottom: 30px;
     }
@@ -42,16 +39,3 @@
     }
   }
 }
-
-// @media screen and (max-width: 320px) {
-//   .contactUs {
-
-//     &__heading {
-
-//     }
-
-//     &__text {
-
-//     }
-//   }
-// }

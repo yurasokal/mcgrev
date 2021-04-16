@@ -14,14 +14,14 @@
   }
 
   &__link {
-    color: #454646;
+    color: $text-color;
     position: relative;
     margin: 0 40px;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-      color: rgb(148, 147, 147);
+      color: $info-text-color;
       transition: color 0.5s;
     }
 
@@ -33,7 +33,7 @@
       width: 0;
       height: 2px;
       content: "";
-      background-color: #5d6263;
+      background-color: $info-text-color;
       transition: width 0.3s ease-out;
     }
 
@@ -43,25 +43,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .navigation {
     &__link {
       margin: 10px;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navigation {
-    &__link {
       margin-right: 4px;
       margin-left: 4px;
-      // font-size: 13px;
     }
-
-    // &__item {
-    //   font-size: 14px;
-    // }
 
     &__copyright {
       max-width: 100%;

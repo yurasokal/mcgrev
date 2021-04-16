@@ -1,7 +1,6 @@
 .partners {
   &__pictures {
     display: flex;
-    // flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }
@@ -14,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .partners {
     &__pictures {
       flex-wrap: wrap;
@@ -30,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone-screen-breakpoint) {
   .partners {
     &__picture {
       width: calc(100% / 2);

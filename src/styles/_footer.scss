@@ -8,9 +8,9 @@
   margin-top: 60px;
   font-size: 16px;
   text-align: center;
-  border-top: 2px solid #9d9e9e;
-  background-color: #f1ecec;
-  color: #454646;
+  border-top: 2px solid $footer-border-color;
+  background-color: $footer-background-color;
+  color: $text-color;
 
   &__navigation {
     justify-content: center;
@@ -32,7 +32,7 @@
 
   &__address,
   &__phone {
-    color: #454646;
+    color: $text-color;
     text-decoration: none;
     transition: color 0.5s;
 
@@ -43,23 +43,23 @@
 
   &__email {
     font-size: 18px;
-    color: #f3a95b;
+    color: $email-color;
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-      color: #daa468;
+      color: $button-darker;
     }
   }
 
   &__copyright {
     padding-top: 50px;
     margin-bottom: 50px;
-    border-top: 1px solid #9d9e9e;
+    border-top: 1px solid $footer-border-color;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad-screen-breakpoint) {
   .footer {
     &__navigation {
       justify-content: center;
@@ -69,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone-screen-breakpoint) {
   .footer {
     &__copyright {
       max-width: 320px;
