@@ -1,10 +1,6 @@
-.section__contactUs {
-  display: flex;
-}
-
 .contactUs {
   // flex-direction: column;
-  // max-width: 730px;
+  max-width: 730px;
   color: #454646;
   text-align: center;
   // margin: 80px 0 70px;
@@ -12,6 +8,10 @@
 
   &__text {
     max-width: 730px;
+  }
+
+  &__heading {
+    padding-bottom: 20px;
   }
 
   &__button {
@@ -43,15 +43,15 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .contactUs {
+// @media screen and (max-width: 320px) {
+//   .contactUs {
 
-    &__heading {
+//     &__heading {
 
-    }
+//     }
 
-    &__text {
+//     &__text {
 
-    }
-  }
-}
+//     }
+//   }
+// }

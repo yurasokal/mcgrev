@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McGrew behavior services</title>
+
     <link rel="stylesheet" href="./styles/home.scss">
     <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +23,8 @@
           <div class="logo__text"></div>
         </div>
 
+        <!-- <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button> -->
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -64,40 +67,38 @@
 
     <main class="main">
 
-      <section class="section section__partners">
-        <div class="partners">
-          <div class="partners__pictures">
-            <img
-              class="partners__picture"
-              src="./images/partners/Magellan.png"
-              alt="magelan"
-            >
-            <img
-              class="partners__picture"
-              src="./images/partners/Kaiser.png"
-              alt="kaiser"
-            >
-            <img
-              class="partners__picture"
-              src="./images/partners/Anthem.png"
-              alt="anthem"
-            >
-            <img
-              class="partners__picture"
-              src="./images/partners/North.png"
-              alt="north-bay"
-            >
-            <img
-              class="partners__picture"
-              src="./images/partners/Partnership.png"
-              alt="health-plan"
-            >
-            <img
-              class="partners__picture"
-              src="./images/partners/Aetna.png"
-              alt="aetna"
-            >
-          </div>
+      <section class="partners">
+        <div class="partners__pictures">
+          <img
+            class="partners__picture"
+            src="./images/partners/Magellan.png"
+            alt="magelan"
+          >
+          <img
+            class="partners__picture"
+            src="./images/partners/Kaiser.png"
+            alt="kaiser"
+          >
+          <img
+            class="partners__picture"
+            src="./images/partners/Anthem.png"
+            alt="anthem"
+          >
+          <img
+            class="partners__picture"
+            src="./images/partners/North.png"
+            alt="north-bay"
+          >
+          <img
+            class="partners__picture"
+            src="./images/partners/Partnership.png"
+            alt="health-plan"
+          >
+          <img
+            class="partners__picture"
+            src="./images/partners/Aetna.png"
+            alt="aetna"
+          >
         </div>
       </section>
 
@@ -117,28 +118,64 @@
         </div>
       </section>
 
-      <section class="section section__contactUs">
-        <div class="contactUs" id="contact">
-          <h2 class="contactUs__heading">
-            McGrew Behavior Services Helps...
-          </h2>
-          <p class="contactUs__text">
-            Families, organizations and health care providers in Northern California. Our knowledge and experience provide the specialized support people when overcoming behavioral
-          </p>
-          <a
-            class="contactUs__button button"
-            href="https://www.ebay.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Contact us
-          </a>
-        </div>
+      <section class="contactUs" id="contact">
+        <h2 class="contactUs__heading">
+          McGrew Behavior Services Helps...
+        </h2>
+        <p class="contactUs__text">
+          Families, organizations and health care providers in Northern California. Our knowledge and experience provide the specialized support people when overcoming behavioral
+        </p>
+        <a
+          class="contactUs__button button"
+          href="https://www.ebay.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Contact us
+        </a>
       </section>
 
-      <section class="section">
-        <div class="inHomeSupport">
-          <div class="inHomeSupport__content"></div>
+      <section class="support">
+        <div class="support__container">
+          <div class="support__slider-outer">
+            <img
+              src="./images/slider/back.png"
+              class="support__prev"
+              alt="prev"
+              height="50px"
+              weight="50px"
+            >
+            <div class="support__slider-inner">
+              <img
+                src="./images/slider/Slider1.png"
+                class="support__active"
+                alt="nature"
+
+              >
+              <img
+                src="./images/slider/Slider2.jpeg"
+                class="support__nature"
+                alt="nature"
+              >
+              <img
+                src="./images/slider/Slider3.jpeg"
+                class="support__nature"
+                alt="nature"
+              >
+              <img
+                src="./images/slider/Slider4.png"
+                class="support__nature"
+                alt="nature"
+              >
+            </div>
+            <img
+                src="./images/slider/next.png"
+                class="support__next "
+                alt="next"
+                height="50px"
+                weight="50px"
+              >
+          </div>
         </div>
       </section>
 
@@ -149,7 +186,7 @@
             src="./images/joinOurTeam.png"
             alt="join our team"
           >
-          <div class="join__information join__section">
+          <div class="join__information">
             <p class="join__quote">
               Be a part of semething bigger than yourself. Make a difference.
             </p>
@@ -176,25 +213,25 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <nav class="footer__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__linkFooter">
+        <nav class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#home" class="navigation__link">
                 Home
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__linkFooter">
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">
                 About us
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__linkFooter">
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link">
                 Contact
               </a>
             </li>
-            <li class="nav__item">
-              <a href="#career" class="nav__linkFooter">
+            <li class="navigation__item">
+              <a href="#career" class="navigation__link">
                 Careers
               </a>
             </li>

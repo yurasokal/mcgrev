@@ -61,3 +61,50 @@ function hasScrolled() {
 //     stickyNav();
 //   });
 // });
+
+
+
+
+
+// $(document).ready(function() {
+//   $('.cross').hide();
+//   $('.nav').hide();
+
+//   $('.hamburger').click(function() {
+//     $('.nav').slideToggle('slow', function() {
+//       $('.hamburger').hide();
+//       $('.cross').show();
+//     });
+//   });
+
+//   $('.cross').click(function() {
+//     $('.nav').slideToggle('slow', function() {
+//       $('.cross').hide();
+//       $('.hamburger').show();
+//     });
+//   });
+// });
+
+
+
+$(document).ready(function() {
+  $('.support__prev').on('click', function() {
+    let currentImg = $('.support__active');
+    let prevImg = currentImg.prev();
+
+    if (prevImg.length) {
+      currentImg.removeClass('support__active').css('z-index', -10);
+      prevImg.addClass('support__active').css('z-index', 10);
+    }
+  })
+
+  $('.support__next').on('click', function() {
+    let currentImg = $('.support__active');
+    let nextImg = currentImg.next();
+
+    if (nextImg.length) {
+      currentImg.removeClass('support__active').css('z-index', -10);
+      nextImg.addClass('support__active').css('z-index', 10);
+    }
+  })
+});

@@ -12,7 +12,8 @@
   background-color: #f1ecec;
   color: #454646;
 
-  &__nav {
+  &__navigation {
+    justify-content: center;
     margin: 50px 0;
   }
 
@@ -55,6 +56,16 @@
     padding-top: 50px;
     margin-bottom: 50px;
     border-top: 1px solid #9d9e9e;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__navigation {
+      justify-content: center;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
 

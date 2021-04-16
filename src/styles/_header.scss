@@ -17,6 +17,10 @@
     height: 110px;
     margin-bottom: 45px;
   }
+
+  &__nav {
+    // display: block;
+  }
 }
 
 body {
@@ -30,11 +34,14 @@ body {
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
+  z-index: 10000;
 }
 
 .nav-up {
   top: -40px;
 }
+
+
 
 // body {
 //   padding: 0;
