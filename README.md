@@ -1,6 +1,6 @@
 # About
 - landing page includes header with nav, main with seven blocks there and footer. Also there are few animations, buttons and links.
-- This page is adaptive to different devices Mobile (> 320px), Tablet (768px)
+- This page is adaptive to next devices: Notebook (> 1280px), Tablet (> 768px), Mobile (> 320px)
 
 # Links
 - [DEMO LINK](https://yurasokal.github.io/mcgrev/)
@@ -12,4 +12,9 @@
 - BEM methodology
 - SCSS preprocessor
 - HTML5/CSS3
+
+# How to run project locally
+1. npm i
+2. npm start
+3. open your browser at http://localhost:3000
 
