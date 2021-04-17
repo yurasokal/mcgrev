@@ -4,8 +4,8 @@
   background-position: center;
   width: 100%;
   color: $white-color;
-  height: 100vh;
-  padding: 520px 20px 20px;
+  // height: 100vh;
+  padding: 570px 20px 20px;
 
   &__heading {
     font-size: 40px;
@@ -39,12 +39,12 @@
 
 @media screen and (max-width: $ipad-screen-breakpoint) {
   .hero {
-    padding-top: 520px;
+    padding-top: 755px;
   }
 }
 
-// @media screen and (max-width: 320px) {
-//   .hero {
-//     padding-top: 250px;
-//   }
-// }
+@media screen and (max-width: 320px) {
+  .hero {
+    padding-top: 250px;
+  }
+}
