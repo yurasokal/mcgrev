@@ -10,7 +10,6 @@
 
 $(document).ready(function() {
   $('.support__prev').on('click', function() {
-    // eslint-disable-next-line no-use-before-define
     var currentImg = $('.support__active');
     var prevImg = currentImg.prev();
 

@@ -10,7 +10,7 @@
   }
 
   &__information {
-    background: $info-text-color;
+    background: $analog-background-color;
     background-size: cover;
     flex-basis: 50%;
     max-width: 50%;
@@ -63,7 +63,6 @@
     &__information {
       display: flex;
       flex-direction: column;
-      background: $analog-background-color;
       background-size: cover;
       flex-basis: 100%;
       max-width: 100%;
