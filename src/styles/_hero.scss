@@ -4,7 +4,7 @@
   background-position: center;
   width: 100%;
   color: $white-color;
-  padding: 570px 20px 20px;
+  padding: 460px 50px 130px;
 
   &__heading {
     font-size: 40px;
@@ -19,7 +19,7 @@
 
   &__text {
     padding-top: 30px;
-    max-width: 460px;
+    max-width: 400px;
   }
 
   &__button {
@@ -38,12 +38,30 @@
 
 @media screen and (max-width: $ipad-screen-breakpoint) {
   .hero {
-    padding-top: 755px;
+    padding-top: 535px;
+    padding-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero {
-    padding-top: 250px;
+    padding-top: 350px;
+    padding-left: 20px;
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__mainWord {
+      font-size: 24px;
+    }
+
+    &__button {
+      margin-top: 10px;
+    }
   }
 }
